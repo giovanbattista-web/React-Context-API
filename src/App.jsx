@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PostsPage from './component/PostsPage';
 
 const posts = [
   {
@@ -31,7 +32,7 @@ function App() {
 
   return (
     <>
-
+      <PostsPage posts={posts} />
     </>
   )
 };
