@@ -5,7 +5,7 @@ const PostsPage = ({ posts }) => {
     return (
         <div>
             <h1>Lista di tutti i nostri post</h1>
-            <PostList posts={posts} />
+            <PostsList posts={posts} />
         </div>
     )
 };

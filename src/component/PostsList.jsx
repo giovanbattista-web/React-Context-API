@@ -1,8 +1,20 @@
 import React from 'react';
 
-const PostsList = () => {
+const PostsList = ({ posts }) => {
     return (
-        <div></div>
+        <div className='container'>
+            <ul className='list-group'>
+                {posts.map((post, index) => (
+                    <li className='list-group-item' key={index}>
+                        <h2>{post.title}</h2>
+                        <p>{post.content}</p>
+                        <p>{post.category}</p>
+                    </li>
+                )
+                )
+                }
+            </ul>
+        </div>
     )
 };
 
