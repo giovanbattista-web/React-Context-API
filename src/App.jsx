@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import PostsPage from './component/PostsPage';
+import CountContext from './contexts/CountContext';
+
 const posts = [
   {
     id: 1,
@@ -28,10 +30,13 @@ const posts = [
 ];
 
 function App() {
+  console.log(CountContext);
 
   return (
     <>
-      <PostsPage posts={posts} />
+      <CountContext.Provider value={{ count: 1 }}>
+        <PostsPage posts={posts} />
+      </CountContext.Provider>
     </>
   )
 };
