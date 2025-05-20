@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import PostsList from './component/PostsList';
+import PostsPage from './component/PostsPage';
 const posts = [
   {
     id: 1,
@@ -31,7 +31,7 @@ function App() {
 
   return (
     <>
-      <PostsList posts={posts} />
+      <PostsPage posts={posts} />
     </>
   )
 };
