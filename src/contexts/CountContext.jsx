@@ -1,9 +1,2 @@
-import React from 'react';
-
-const CountContext = () => {
-    return (
-        <div></div>
-    )
-};
-
-export default CountContext;
+import { createContext } from "react";
+const PostContext = createContext();
