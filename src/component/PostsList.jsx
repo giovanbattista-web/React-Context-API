@@ -1,5 +1,7 @@
 import React from 'react';
 import PostsPage from './PostsPage';
+import { useContext } from 'react';
+import CountContext from '../contexts/CountContext';
 
 const PostsList = ({ posts }) => {
     return (
