@@ -1,4 +1,5 @@
 import React from 'react';
+import PostsPage from './PostsPage';
 
 const PostsList = ({ posts }) => {
     return (
