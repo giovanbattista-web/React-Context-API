@@ -1,6 +1,5 @@
-import { useState } from 'react';
 import PostsPage from './pages/PostsPage';
-import CountContext from './contexts/CountsContext';
+import PostsContext from './contexts/PostsContext';
 
 function App() {
 
@@ -32,10 +31,9 @@ function App() {
   ];
 
   return (
-    <CountContext.Provider value={posts}>
-      <h1>Il mio Blog</h1>
+    <PostsContext.Provider value={posts}>
       <PostsPage />
-    </CountContext.Provider>
+    </PostsContext.Provider>
   )
 };
 

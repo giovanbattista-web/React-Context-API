@@ -2,7 +2,7 @@
 import { createContext } from "react";
 
 // CREIAMO IL CONTESTO
-const CountContext = createContext();
+const PostsContext = createContext();
 
 //ESPORTIAMO IL CONTESTO APPENA CREATO
-export default CountContext;
+export default PostsContext;

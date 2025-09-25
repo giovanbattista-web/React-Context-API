@@ -1,5 +1,3 @@
-import React from 'react'
-
 const PostCard = ({ post }) => {
     const { title, category, content } = post;
     return (
@@ -10,7 +8,7 @@ const PostCard = ({ post }) => {
                 <p>{content}</p>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default PostCard
+export default PostCard;

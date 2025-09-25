@@ -1,21 +1,17 @@
-import React from 'react';
 import { useContext } from 'react';
-import CountContext from '../contexts/CountsContext';
-import PostCard from '../pages/PostCard';
+import PostsContext from '../contexts/PostsContext';
+import PostCard from './PostCard';
 
 
 const PostsList = () => {
     // UTILIZZO IL CONTESTO CHE HO CREATO E MESSO A DISPOSIZIONE 
-    const posts = useContext(CountContext);
-    console.log(posts);
+    const posts = useContext(PostsContext);
     return (
-        <>
-            <div className='row gy-3'>
-                {posts.map((post) => {
-                    return <PostCard key={post.id} post={post} /> //PROP AGGIUNTA 
-                })}
-            </div>
-        </>
+        <div className='row gy-3'>
+            {posts.map((post) => {
+                return <PostCard key={post.id} post={post} /> //PROP AGGIUNTA 
+            })}
+        </div>
     )
 };
 
