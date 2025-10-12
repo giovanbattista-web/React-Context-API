@@ -1,7 +1,6 @@
 Esercizio 
 Sfruttiamo le Context API per rendere disponibile la lista dei post in tutta la nostra app.
 Create una nuova repo e seguite i seguenti passaggi:
-
 1. Partiamo col definire la lista dei post all’interno di App.jsx (quindi utilizzerete il primo "metodo" visto a lezione, quello più immediato, senza la personalizzazione del Provider)
 2. Create un componente PostsPage.jsx che conterrà al suo interno un titolo e un componente PostsList.jsx che mostra la lista di tutti i nostri post.
 3. Creiamo un file per definire il nostro Context ed esportiamolo.
